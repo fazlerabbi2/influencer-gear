@@ -171,6 +171,7 @@
 .fetured_porduct_img img{
     min-width: 100%;
     min-height: 100%;
+    max-width: 100%;
 }
 .fetured_porduct_meta {
     flex-basis: calc(60% - 80px / 2);
@@ -232,4 +233,104 @@ footer.footer_area h2 {
 
 footer.footer_area p {
     margin-bottom: 15px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width:576px) {
+    .top_header{
+        display: none;
+    }
+    .banner_container_width{
+        width: 100%;
+        text-align: center;
+    }
+    .menu_icon{
+        text-align: left;
+    }
+    .mobile_menu {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 30px 20px;
+    }
+    .mobile_menu .logo {
+        text-align: center;
+    }
+    .mobile_menu .menu{
+        text-align: right;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px;
+        width: calc(100% - 30px );
+        margin: 0px auto;
+    }
+    .banner div{
+        flex-basis: 100%;
+    }
+    .banner_img img{
+        width: 400;
+        height: 400px;
+    }
+    .banner .banner_text h1{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 25px;
+        
+    }
+    .share_brad.banner_container_width{
+        padding: 0px;
+    }
+    .brands{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 0px;
+        padding: 50px 0px;
+        margin-top: 20px;
+    }
+    .brand_logo{
+        width: 25%;
+    }
+    .product_area{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .products div{
+        width: 100%;
+    }
+    .single_product img{
+        max-width: 100%;
+    }
+    .container_width{
+        width: calc(100% - 40px);
+    }
+    .featured_product {
+        padding: 50px 0px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .fetured_porduct_meta {
+        text-align: center;
+    }
+    .fetured_porduct_img img{
+        max-width: 100%;
+    }
+    .footer_area{
+        padding: 50px;
+    } 
+
+}
+
+/* medium Device resposive  */
+
+@media screen and (min-width:577px) and (max-width:992){
+
+
+
+
 }
